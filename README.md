@@ -1,11 +1,13 @@
-# Interview-Trial-Project
-Create Custom Post type of name Website which has post type "tp_website"
+# Assement Task
+Create Custom Post type of name Projects which has post type "at_projects"
 
-Add metabox named "Form Entries" against my custom post type 
+If anyone whom ip start with "77.29" redirects toward www.google.com
 
-Remove other metaboxes such as Feature image, editor and publish
+Create Shortcode "at_show_quotes" for displaying quotes from quotes api just place it in any page and read random 5 quotes
 
-Create shortcode of form which is used for collecting name and website url from user
+Create Shortcode "at_coffee_cup" for displaying Random Coffee image and some detail from api
 
-Create end-point(custom url = 'yoursiteurl/wp-json/tp/websites') for json api which display all posts of "tp_website" posttype
+Create Shortcode "at_show_projects" for displaying Projects
+
+Create end-point(custom url = 'yoursiteurl/wp-json/at/projects') for json api which displays number of posts on basis of user login and also of its project-type
 
