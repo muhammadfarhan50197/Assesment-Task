@@ -15,7 +15,6 @@ add_action('wp_head', 'at_redirect_user_outside_on_specfic_ip'); // If anyone wh
 add_shortcode('at_show_quotes', 'at_show_quotes_callback'); //Create Shortcode for displaying quotes from quotes api just place it in any page and read random 5 quotes 
 add_shortcode('at_coffee_cup', 'hs_give_me_coffee'); //Create Shortcode for displaying Random Coffee image and some detail from api
 add_shortcode('at_show_projects', 'at_show_projects_callback'); //Create Shortcode for displaying Projects
-add_shortcode('at_create_github', 'at_create_github_callback');
 add_action('rest_api_init', function() { //Create a json api which displays number of posts on basis of user login and also of its project-type
     $GLOBALS['user_id'] = get_current_user_id(); //for getting user id in its callback function where we find user is login or not
     register_rest_route('at', 'projects', [
@@ -199,8 +198,4 @@ function hs_give_me_coffee() {
     $coffee = '<center><div><img style="width: 50%;" src="'.$response[$randomNumber]['image'].'" /><h3>'.$response[$randomNumber]['title'].'</h3><p>'.$response[$randomNumber]['description'].'</p></div></center>';
     return $coffee;
 
-}
-
-function at_create_github_callback() {
-    echo 'successfully created';
 }
